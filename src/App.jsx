@@ -15,7 +15,7 @@ export default function ATSResumeChecker() {
     setError(null);
     setResult(null);
     try {
-      const response = await fetch("http://localhost:3000/api/scan", {
+      const response = await fetch("https://ats-checker-production-7bde.up.railway.app/api/scan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ resume, jobDesc }),
